@@ -1,0 +1,72 @@
+.pagintors {
+    float: right;
+}
+
+.pagintors button {
+    margin-left: 10px;
+    height: 45px;
+    width: 100px;
+    border: none;
+    background: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: #009879;
+    border: lightgray;
+}
+
+.pagintors button:focus {
+    background: rgb(0, 177, 177);
+}
+
+.pagintors span {
+    margin-left: 10px;
+}
+
+.pagintors span select {
+    width: 60px;
+    height: 35px;
+}
+
+.noData {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header {
+    margin: 4% 5% 2% 5%;
+}
+
+.header input {
+    width: 500px;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    text-indent: 20px;
+    border: 3px solid teal;
+}
+
+table {
+    /* border-spacing: 0px; */
+    max-width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th {
+    background-color: teal;
+    height: 35px;
+    color: white;
+    line-height: 35px;
+}
+
+td {
+    height: 50px;
+    font-size: 1.1em;
+}

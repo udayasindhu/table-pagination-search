@@ -1,0 +1,27 @@
+<div class="header">
+  <input type="text" matInput placeholder="Filter data" (keyup)="filterData($event)">
+  <div class="pagintors" *ngIf="!noData">
+    <button (click)="changePage('F')">First</button>
+    <button (click)="changePage('P')">Prev</button>
+    <span>
+      Page {{currentPage}} of {{totalPages}}
+    </span>
+    <button (click)="changePage('N')">Next</button>
+    <button (click)="changePage('L')">Last</button>
+  </div>
+</div>
+<div class="table">
+  <div *ngIf="noData" class="noData">
+    Found zero search results : (
+  </div>
+  <table *ngIf="!noData">
+    <th *ngFor="let header of tableHeaders" class="headers">
+      {{header | titlecase}}
+    </th>
+    <tr *ngFor="let data of tableData">
+      <ng-container *ngFor="let header of tableHeaders">
+        <td>{{data[header]}}</td>
+      </ng-container>
+    </tr>
+  </table>
+</div>
